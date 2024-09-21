@@ -1,0 +1,7 @@
+
+.env
+/src/__pycache__
+/src/facebook_api/__pycache__
+/tests/__pycache__
+/venv
+info.log
