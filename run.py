@@ -11,11 +11,7 @@ def run_tests():
 
 
 async def uvicorn_start():
-    config = uvicorn.Config(
-        "src.main:app",
-        host='127.0.0.1',
-        port='8000'
-    )
+    config = uvicorn.Config("src.main:app", host="127.0.0.1", port=8000, log_level="info")
     server = uvicorn.Server(config)
     await server.serve()
 
@@ -23,7 +19,6 @@ async def runner():
     await asyncio.gather(uvicorn_start())
 
 if __name__ == "__main__":
-    run_tests()
-    warnings.filterwarnings("ignore")
+    #run_tests()
     asyncio.run(runner())
 

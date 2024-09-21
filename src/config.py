@@ -25,8 +25,8 @@ _LOCAL_HOSTS = 'http://localhost;https://localhost;http://127.0.0.1;https://127.
 
 load_dotenv()
 
-PAGE_ID = os.getenv.get('PAGE_ID')
-PAGE_ACCESS_TOKEN = os.getenv.get('PAGE_ACCESS_TOKEN')
+PAGE_ID = os.getenv('PAGE_ID')
+PAGE_ACCESS_TOKEN = os.getenv('PAGE_ACCESS_TOKEN')
 TMP_DIR = os.environ.get('TMP_DIR', '/tmp')
 ALLOWED_ORIGINS = _LOCAL_HOSTS
 origins = os.environ.get("ALLOWED_ORIGINS")
